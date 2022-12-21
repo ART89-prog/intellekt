@@ -1,0 +1,68 @@
+@media (max-width: 479px) {
+
+    .requirements_item-title {
+        margin-bottom: 7px;
+    }
+    .clients_items {
+        margin-left: 0px;
+    }
+    .clients_items > * {
+        width: inherit;
+        margin-left: 0px;
+    }
+    .clients_item {
+        margin: 10px auto;
+    }
+    .requisites ul {
+        padding-bottom: 20px;
+    }
+    .requisites {
+        margin-bottom: 20px;
+    }
+    .footer_logo {
+        margin-left: auto;
+        width: inherit;
+    }
+    .footer_top ul {
+        width: 100%;
+        margin-bottom: 10px;  
+        margin-left: auto;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .footer_top ul:last-child {
+        align-items: center;
+    }
+    .footer_top ul li {
+        margin-bottom: 10px; 
+    }
+    .footer_bottom-link a:first-child {
+        margin-right: 30px;
+    }
+    .first-section_img,
+    .realization_img,
+    .components_item-img {
+        width: 310px;
+        height: 312px;
+    }
+    .requirements_item {
+        width: 200px;
+    }
+    .tabs {
+        margin-bottom: 5px;
+    }
+    .requirements-po .requirements_item {
+        width: 160px;
+    }
+    .clients_item:nth-child(1) img {
+        width: 247px;
+        height: 83px;
+    }
+    .footer_top ul li {
+        margin-right: 0px;
+    }
+ 
+
+   
+}

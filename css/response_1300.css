@@ -1,0 +1,18 @@
+@media print, (max-width: 1300px) {
+
+    header .menu .item {
+        margin-right: 15px;
+    }
+    .requirements_item-title {
+        font-size: 16px;
+    }
+    .documents_item-title {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .footer_logo {
+        margin-left: 30px;
+    }
+
+}
+

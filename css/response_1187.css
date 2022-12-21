@@ -1,0 +1,198 @@
+@media print, (max-width: 1187px) {
+
+    header .mob_menu_btn {
+        display: flex;
+        order: 1;
+    }
+    header .menu {
+        position: fixed;
+        z-index: 107;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        overflow: auto;
+
+        width: 295px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 30px 20px;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #fff;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+    header .menu.show {
+        transform: translateX(0);
+    }
+    header .close_btn {
+        display: flex;
+    }
+    .menu_open header .mob_menu_btn {
+        display: none;
+    }
+    header .menu .item {
+        width: 100%;
+    }
+    header .menu .item + .item {
+        margin-left: 0;
+    }
+    header .menu .item > a {
+        display: block;
+        height: auto;
+        padding: 17px 0;
+        text-align: left;
+        color: #000;
+    }  
+    .mob_menu_btn span {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 2px;
+        transition: background .2s linear;
+        background: #000; 
+    }
+    .mob_menu_btn span:before, 
+    .mob_menu_btn span:after {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: '';
+        transition: .2s linear;
+        background: #000;
+    }
+    .mob_menu_btn span:after {
+        top: 8px;
+    }
+    .mob_menu_btn.active span {
+        background: transparent;
+    }
+    .mob_menu_btn.active span:before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .mob_menu_btn.active span:after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    .menu_open header {
+        background: #595959;
+    }
+    .callback_left {
+        margin-right: 50px;
+        max-width: 469px;
+    }
+    .callback_email span {
+        white-space: inherit;
+    }
+    .realization_img {
+        width: 508px;
+        height: 510px;
+    }
+    .realizationn_title {
+        margin-bottom: 30px;
+    }
+    .title {
+        line-height: 2;
+    }
+    .first-section_img {
+        width: 473px;
+        height: 461px;
+    }
+    .description ul {
+        margin-bottom: 40px;
+    }
+    .first-section {
+        margin-bottom: 40px;
+    }
+    .components_items > * {
+        margin-bottom: 50px;
+    }
+    .installation_item-text {
+        font-size: 18px;
+    }
+    .callback_left-title {
+        font-size: 28px;
+    }
+    .callback_right-title {
+        font-size: 34px;
+    }
+    .callback_right-text {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+    .callback_phone {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 88px;
+    }
+    .callback_price  {
+        font-size: 22px;
+    }
+    .footer_top ul li {
+        margin-right: 15px;
+    }
+    .documents_items {
+        margin-left: -20px;
+    }
+    .documents_items > * {
+        width: calc(100%/6 - 20px);
+        margin-left: 20px;
+    }
+    .contact_callback {
+        display: none;
+    }
+    .contact_callback-mob {
+        display: block;
+        width: 100%;  
+        margin-top: 20px;      
+    }
+    header .logo-mob {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .requirements_item {
+        margin-right: 20px;
+        width: 260px;
+    }
+
+    .requirements-po .tabs {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-left: -40px;
+        margin-bottom: 40px;
+    }
+    .requirements-po .tabs > * {
+        width: calc(100%/3 - 40px);
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .description ul li {
+        margin-bottom: 30px;
+    }
+    header .logo img {
+        width: 65%;
+    }
+
+
+
+
+
+
+}

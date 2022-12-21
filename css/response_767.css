@@ -1,0 +1,186 @@
+@media print, (max-width: 767px) {
+
+    :root {
+        --font_size: 16px;
+        --font_size_title: 20px;
+    }
+    .first-section {
+        margin-top: 70px;
+    }
+    .first-section_title {
+        font-size: 23px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+    .first-section_img {
+        width: 430px;
+        height: 432px;
+    }
+    .title {
+        line-height: 1.8;
+    }
+    .description_title, 
+    .realizationn_title, 
+    .components_title {
+        margin-bottom: 15px;
+    }
+    .description ul li,
+    .components ul li {
+        padding-left: 45px;
+    }
+    .realization_img {
+        width: 430px;
+        height: 432px;
+    }
+    .realization {
+        margin-bottom: 20px;
+    }
+    .title2 {
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 17px;
+    }
+    .components_item-text, 
+    .installation_item-text {
+        font-size: 17px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .components_item-img {
+        width: 433px;
+        height: 437px;
+    }
+    .callback_left-title {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .callback_phone img, 
+    .callback_email img {
+        margin-right: 12px;
+        width: 37px;
+        height: 37px;
+    }
+    .callback_phone, 
+    .callback_email {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    .callback_email b {
+        font-size: 18px;
+        line-height: 29px;
+        margin-right: 5px;
+    }
+    .callback_right-title {
+        font-size: 20px;
+        line-height: 1.8;
+        margin-bottom: 5px;
+    }
+    .callback_right {
+        margin-top: 10px;
+    }
+    .callback_right-text {
+        font-size: 17px;
+        line-height: 23px;
+        margin-bottom: 13px;
+    }
+    .callback form label {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    .callback form button {
+        margin-top: 24px;
+    }
+    .callback_price {
+        font-size: 16px;
+    }
+    .requirements_item-title {
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+    .requirements ul {
+        padding: 14px;
+    }
+    .requirements ul li {
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    .documents_items > * {
+        width: calc(100%/2 - 20px);
+    }
+    .footer_top {
+        margin-bottom: 20px;
+    }
+    .footer_bottom-link {
+        margin-bottom: 15px;
+    }
+    footer {
+        margin-bottom: 25px;
+    }
+    .requisites ul {
+        margin-left: 0;
+    }
+    .requisites {
+        margin-bottom: 30px;
+    }
+    .footer_logo {
+        margin-left: auto;
+        margin-right: auto;
+        order: -1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer_top {
+        flex-wrap: wrap;
+    }
+    .footer_top ul:last-child {
+        align-items: flex-start;
+    }
+    .requisites ul li {
+        padding-left: 45px;
+        margin-bottom: 15px;
+    }
+    .clients {
+        margin-bottom: 40px;
+    }
+    .text_block-wrap {
+        padding-top: 30px;
+    }
+    .tabs {
+        margin-bottom: 20px;
+    }
+
+    .requirements-po .tabs > * {
+        width: 200px;
+    }
+    .requirements-po .tabs {
+        margin-bottom: 20px;
+    }
+    .clients_item:nth-child(1) img {
+        width: 215px;
+        height: 72px;
+    }
+
+    .modal .callback_right-title {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 7px;
+    }
+    .modal .callback_right-text {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 16px;
+    }
+    .modal.callback form .line {
+        margin-bottom: 13px;
+    }
+    
+
+
+
+
+
+
+
+}

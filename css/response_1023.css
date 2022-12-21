@@ -1,0 +1,205 @@
+@media print, (max-width: 1023px) {
+ 
+    :root {
+        --font_size: 17px;
+        --font_size_title: 24px;
+    }
+    header  {
+        margin-bottom: 50px;
+    }
+    .first-section {
+        margin-top: 100px;
+    }
+    .first-section_title {
+        font-size: 26px;
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+    .first-section_title br {
+        display: none;
+    }
+    .first-section_wrap,
+    .realization_wrap {
+        flex-direction: column;
+    }
+    .first-section_info,
+    .realization_info {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .first-section_text,
+    .realization_text {
+        line-height: 2;
+    }
+    .first-section_img,
+    .realization_img {
+        margin: 25px auto 0;
+    }
+    .description_title,
+    .realizationn_title,
+    .components_title {
+        margin-bottom: 20px;
+    }
+    .description ul {
+        margin-bottom: 0px;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .description ul li {
+        width: 100%;
+        margin-left: 0px;
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+    .title2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 19px;
+    }
+    .components_item-text,
+    .installation_item-text {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 21px;
+    }
+    .components_items,
+    .installation_items {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .components_items > *,
+    .installation_items > * {
+        margin-bottom: 30px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .components_item-wrap {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .components_item:last-child .components_item-info {
+        width: 100%;
+        margin-left: 0;
+        order: -1;
+        margin-top: 10px;
+    }
+    .components_item:last-child .components_item-title {
+        margin-bottom: 20px;
+    } 
+    .components_item-img {
+        margin: 0 auto;
+    }
+    .installation_text {
+        line-height: 2;
+    }
+    .installation_title {
+        margin-bottom: 20px;
+    }
+    .callback {
+        padding: 30px 0 30px;
+    }
+    .callback_wrap {
+        flex-direction: column;
+    }
+    .callback_left {
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .callback_left-title {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .callback_phone,
+    .callback_email {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .callback_right {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .callback_right-title {
+        font-size: 28px;
+    }
+    .callback form label {
+        font-size: 17px;
+    }
+    .callback_wrap {
+        margin-bottom: 30px;
+    }
+    .callback_price {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+    .callback,
+    .requirements,
+    .documents,
+    .clients {
+        margin-bottom: 40px;
+    }
+    .requirements ul {
+        padding: 20px;
+    }
+    .requirements ul li {
+        margin-bottom: 10px;
+        line-height: 1.8;
+    }
+    .documents_items {
+        margin-bottom: -30px;
+    }
+    .documents_items > * {
+        width: calc(100%/3 - 20px);
+        margin-bottom: 30px;
+    }
+    .clients_items {
+        margin-left: -30px;
+        padding-left: 0;
+    }
+    .clients_items > * {
+        width: calc(100%/2 - 30px);
+        margin-left: 30px;
+    }
+    .footer_top ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .footer_logo {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .buttonUp button {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+    .footer_top ul li {
+        margin-bottom: 15px;
+    }
+    .footer_top ul li:last-child {
+        margin-bottom: 0;
+    }
+    .text_block p {
+        line-height: 1.8;
+    }
+    .footer_top ul:last-child {
+        align-items: flex-end;
+    }
+    .footer_top ul:last-child li {
+        margin-right: 0;
+    }
+    .modal.callback {
+        padding: 30px 20px 20px;
+    }
+    .modal.callback {
+        max-width: 480px;
+    }
+
+
+    
+
+    
+}
