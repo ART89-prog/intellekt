@@ -39,12 +39,26 @@ $(() => {
 				clickable: true,
 				bulletActiveClass: 'active'
 			},
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			}
+			
 		})
 	}
+
+
+
+	const mySwiper = new Swiper('.staff .swiper-container', {
+		// direction: 'horizontal',
+		loop: true,
+		autoHeight: true,
+		slidesPerView: 4,
+		slidesPerColumn: 2,
+		spaceBetween: 30,	   
+   
+		navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		},
+	   
+	  });
 
 
 	$(".hide-content").hide();
