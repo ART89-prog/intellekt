@@ -97,7 +97,7 @@
 
 
     .first_section .title {
-        padding: 45px 0 70px;
+        padding: 90px 0 90px;
     }
     .swiper-container-horizontal > .swiper-pagination-bullets, 
     .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -213,6 +213,9 @@
     }
     .text_block p {
         margin-bottom: 10px;
+    }
+    .staff_title {
+        margin-bottom: 5px;
     }
 
  

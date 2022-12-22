@@ -33,6 +33,7 @@
 		<link rel="stylesheet" href="css/swiper.css">
 		<link rel="stylesheet" href="css/styles.css">
 
+		<link rel="stylesheet" href="css/response_1300.css" media="print, (max-width: 1300px)">
 		<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
 		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
@@ -62,7 +63,7 @@
 								<a href="index.html">Главная</a>
 							</div>
 							<div class="item">
-								<a href="#about" class="scroll">Лаборатории</a>
+								<a href="#text_block" class="scroll">Лаборатории</a>
 							</div>
 							<div class="item">
 								<a href="#news" class="scroll">Новости</a>
@@ -115,10 +116,10 @@
 				</section>
 
 
-				<section class="text_block">
+				<section class="text_block" id="text_block">
 					<div class="cont">
 						<div class="text_block-title title title-line">О лаборатории</div>
-						<img src="images/text_block_img.jpg" alt="">
+						<img data-src="images/text_block_img.jpg" alt="" class="lozad">
 						<p>На сегодняшний̆ день технологический предел традиционных электронных чипов практически достигнут, что привело к нарушению закона Мура, дальнейшее развитие сталкивается с технологическими проблемами и высоким энергопотреблением из-за уменьшения размеров элементов. Одновременно с этим, быстрое развитие технологий искусственного интеллекта создает новые вызовы для развития вычислительных систем, что проводит к необходимости поиска альтернативных подходов, которые позволят увеличить на порядки производительность и уменьшить энергопотребление. Одним из таких направлений является применение подходов фотоники.</p>
 						<p>Целью работы лаборатории является исследование и разработка новых принципов оптических вычислений, а также аналоговых подходов для создания искусственных интеллектуальных систем. В перспективе, на основе данных разработок планируется создание прототипов новых вычислительных устройств и их элементной базы.</p>
 					</div>
@@ -131,7 +132,7 @@
 						<div class="trend_items">
 							<div class="trend_item">
 								<div class="trend_item-img">
-									<img src="images/trend1.jpg" alt="">
+									<img data-src="images/trend1.jpg" alt="" class="lozad">
 								</div>
 								<div class="trend_item-title">Оптоэлектронные искусственные синапсы</div>
 								<div class="trend_item-text">Целью работы лаборатории является исследование и разработка новых принципов оптических вычислений, а также аналоговых подходов для создания искусственных интеллектуальных систем.</div>
@@ -141,7 +142,7 @@
 							</div>
 							<div class="trend_item">
 								<div class="trend_item-img">
-									<img src="images/trend2.jpg" alt="">
+									<img data-src="images/trend2.jpg" alt="" class="lozad">
 								</div>
 								<div class="trend_item-title">Интегральные фотонные нейронные сети</div>
 								<div class="trend_item-text">Целью работы лаборатории является исследование и разработка новых принципов оптических вычислений, а также аналоговых подходов для создания искусственных интеллектуальных систем.</div>
@@ -151,7 +152,7 @@
 							</div>
 							<div class="trend_item">
 								<div class="trend_item-img">
-									<img src="images/trend3.jpg" alt="">
+									<img data-src="images/trend3.jpg" alt="" class="lozad">
 								</div>
 								<div class="trend_item-title">Дифракционные нейронные сети</div>
 								<div class="trend_item-text">Целью работы лаборатории является исследование и разработка новых принципов оптических вычислений, а также аналоговых подходов для создания искусственных интеллектуальных систем.</div>
@@ -161,7 +162,7 @@
 							</div>
 							<div class="trend_item">
 								<div class="trend_item-img">
-									<img src="images/trend4.jpg" alt="">
+									<img data-src="images/trend4.jpg" alt="" class="lozad">
 								</div>
 								<div class="trend_item-title">Оптическое преобразование Фурье и случайные проекции</div>
 								<div class="trend_item-text">Целью работы лаборатории является исследование и разработка новых принципов оптических вычислений, а также аналоговых подходов для создания искусственных интеллектуальных систем.</div>
@@ -178,7 +179,9 @@
 
 				<section class="staff">
 					<div class="cont">
-						<div class="swiper-container">
+						<div class="staff_title title title-line">Сотрудники лаборатории</div>
+						<div class="arrow-left"></div>
+						<div class="swiper-container">						
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="swiper-slide_img">
@@ -190,11 +193,51 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="swiper-slide_img">
-										<img src="images/staff1.jpg" alt="">
+										<img src="images/staff2.jpg" alt="">
 									</div>
-									<div class="swiper-slide_title">Федянин Андрей Анатольевич</div>
-									<div class="swiper-slide_text">МГУ, профессор</div>
-									<div class="swiper-slide_post">Руководитель лаборатории</div>
+									<div class="swiper-slide_title">Грунин Андрей Анатольевич</div>
+									<div class="swiper-slide_text">МГУ, научный сотрудник</div>
+									<div class="swiper-slide_post">Руководитель направления</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide_img">
+										<img src="images/staff3.jpg" alt="">
+									</div>
+									<div class="swiper-slide_title">Шорохов Александр Сергеевич</div>
+									<div class="swiper-slide_text">МГУ, Samsung, научный сотрудник</div>
+									<div class="swiper-slide_post">Руководитель направления</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide_img">
+										<img src="images/staff4.jpg" alt="">
+									</div>
+									<div class="swiper-slide_title">Четвертухин Артем Вячеславович</div>
+									<div class="swiper-slide_text">МГУ, научный сотрудник</div>
+									<div class="swiper-slide_post">Руководитель направления</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide_img">
+										<img src="images/staff4.jpg" alt="">
+									</div>
+									<div class="swiper-slide_title">Четвертухин Артем Вячеславович</div>
+									<div class="swiper-slide_text">МГУ, научный сотрудник</div>
+									<div class="swiper-slide_post">Руководитель направления</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide_img">
+										<img src="images/staff3.jpg" alt="">
+									</div>
+									<div class="swiper-slide_title">Шорохов Александр Сергеевич</div>
+									<div class="swiper-slide_text">МГУ, Samsung, научный сотрудник</div>
+									<div class="swiper-slide_post">Руководитель направления</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide_img">
+										<img src="images/staff2.jpg" alt="">
+									</div>
+									<div class="swiper-slide_title">Грунин Андрей Анатольевич</div>
+									<div class="swiper-slide_text">МГУ, научный сотрудник</div>
+									<div class="swiper-slide_post">Руководитель направления</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="swiper-slide_img">
@@ -206,83 +249,39 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="swiper-slide_img">
-										<img src="images/staff1.jpg" alt="">
+										<img src="images/staff4.jpg" alt="">
 									</div>
-									<div class="swiper-slide_title">Федянин Андрей Анатольевич</div>
-									<div class="swiper-slide_text">МГУ, профессор</div>
-									<div class="swiper-slide_post">Руководитель лаборатории</div>
+									<div class="swiper-slide_title">Четвертухин Артем Вячеславович</div>
+									<div class="swiper-slide_text">МГУ, научный сотрудник</div>
+									<div class="swiper-slide_post">Руководитель направления</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="swiper-slide_img">
-										<img src="images/staff1.jpg" alt="">
+										<img src="images/staff3.jpg" alt="">
 									</div>
-									<div class="swiper-slide_title">Федянин Андрей Анатольевич</div>
-									<div class="swiper-slide_text">МГУ, профессор</div>
-									<div class="swiper-slide_post">Руководитель лаборатории</div>
+									<div class="swiper-slide_title">Шорохов Александр Сергеевич</div>
+									<div class="swiper-slide_text">МГУ, Samsung, научный сотрудник</div>
+									<div class="swiper-slide_post">Руководитель направления</div>
+								</div>								
+								<div class="swiper-slide">
+									<div class="swiper-slide_img">
+										<img src="images/staff4.jpg" alt="">
+									</div>
+									<div class="swiper-slide_title">Четвертухин Артем Вячеславович</div>
+									<div class="swiper-slide_text">МГУ, научный сотрудник</div>
+									<div class="swiper-slide_post">Руководитель направления</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="swiper-slide_img">
-										<img src="images/staff1.jpg" alt="">
+										<img src="images/staff3.jpg" alt="">
 									</div>
-									<div class="swiper-slide_title">Федянин Андрей Анатольевич</div>
-									<div class="swiper-slide_text">МГУ, профессор</div>
-									<div class="swiper-slide_post">Руководитель лаборатории</div>
+									<div class="swiper-slide_title">Шорохов Александр Сергеевич</div>
+									<div class="swiper-slide_text">МГУ, Samsung, научный сотрудник</div>
+									<div class="swiper-slide_post">Руководитель направления</div>
 								</div>
-								<div class="swiper-slide">
-									<div class="swiper-slide_img">
-										<img src="images/staff1.jpg" alt="">
-									</div>
-									<div class="swiper-slide_title">Федянин Андрей Анатольевич</div>
-									<div class="swiper-slide_text">МГУ, профессор</div>
-									<div class="swiper-slide_post">Руководитель лаборатории</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="swiper-slide_img">
-										<img src="images/staff1.jpg" alt="">
-									</div>
-									<div class="swiper-slide_title">Федянин Андрей Анатольевич</div>
-									<div class="swiper-slide_text">МГУ, профессор</div>
-									<div class="swiper-slide_post">Руководитель лаборатории</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="swiper-slide_img">
-										<img src="images/staff1.jpg" alt="">
-									</div>
-									<div class="swiper-slide_title">Федянин Андрей Анатольевич</div>
-									<div class="swiper-slide_text">МГУ, профессор</div>
-									<div class="swiper-slide_post">Руководитель лаборатории</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="swiper-slide_img">
-										<img src="images/staff1.jpg" alt="">
-									</div>
-									<div class="swiper-slide_title">Федянин Андрей Анатольевич</div>
-									<div class="swiper-slide_text">МГУ, профессор</div>
-									<div class="swiper-slide_post">Руководитель лаборатории</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="swiper-slide_img">
-										<img src="images/staff1.jpg" alt="">
-									</div>
-									<div class="swiper-slide_title">Федянин Андрей Анатольевич</div>
-									<div class="swiper-slide_text">МГУ, профессор</div>
-									<div class="swiper-slide_post">Руководитель лаборатории</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="swiper-slide_img">
-										<img src="images/staff1.jpg" alt="">
-									</div>
-									<div class="swiper-slide_title">Федянин Андрей Анатольевич</div>
-									<div class="swiper-slide_text">МГУ, профессор</div>
-									<div class="swiper-slide_post">Руководитель лаборатории</div>
-								</div>
-								
 							</div>
-					
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
-						
-						</div>		
+						</div>	
+						<div class="arrow-right"></div>	
 					</div>
 				</section>
 
@@ -384,7 +383,7 @@
 
 
 
-				<section class="contacts">
+				<section class="contacts" id="contacts">
 					<div class="cont">
 						<div class="contacts_info">
 							<div class="contacts_title title">Контакты</div>
@@ -397,19 +396,19 @@
 							</a>
 							<div class="contacts_soc">
 								<a href="#">
-									<img src="images/youtube.svg" alt="">
+									<img data-src="images/youtube.svg" alt="" class="lozad">
 								</a>
 								<a href="#">
-									<img src="images/vk.svg" alt="">
+									<img data-src="images/vk.svg" alt="" class="lozad">
 								</a>
 								<a href="#">
-									<img src="images/whatsapp.svg" alt="">
+									<img data-src="images/whatsapp.svg" alt="" class="lozad">
 								</a>
 								<a href="#">
-									<img src="images/telegram.svg" alt="">
+									<img data-src="images/telegram.svg" alt="" class="lozad">
 								</a>
 								<a href="#">
-									<img src="images/viber.svg" alt="">
+									<img data-src="images/viber.svg" alt="" class="lozad">
 								</a>
 							</div>
 						</div>
@@ -442,32 +441,6 @@
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
 
-
-
-		<section class="modal callback" id="callback_modal">
-			<div class="callback_right">
-				<div class="callback_right-title">Обратный звонок</div>
-				<div class="callback_right-text">Отправьте запрос на консультации по ПО</div>
-				<form>
-					<div class="line">
-						<div class="field">
-							<label for="name">Как вас зовут?</label>
-							<input id="name" type="text" placeholder="Ваше имя">
-						</div>
-					</div>
-					<div class="line">
-						<div class="field">
-							<label for="name">Номер телефона</label>
-							<input id="name" type="tel" placeholder="+7 (___) ___-__-__">
-						</div>
-					</div>
-					<button type="submit">
-						<span>Отправить запрос</span>
-					</button>
-					<div class="form-politic">Я подтверждаю согласие на обработку моих персональных данных (закон №152-ФЗ «О персональных данных») и соглашаюсь с политикой конфиденциальности</div>
-				</form>
-			</div>	
-		</section>
 
 
 		<!-- Подключение javascript файлов -->

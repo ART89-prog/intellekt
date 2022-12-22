@@ -1,0 +1,32 @@
+@media print, (max-width: 1300px) {
+
+    .arrow-left {
+        position: absolute;
+        top: 100%;
+        transform: translateY(-70px);
+        left: calc(50% - 70px);
+        cursor: pointer;
+        width: 56px;
+        height: 56px;
+        background: #fff;
+        border: 2px solid #C7CDD9;
+        border-radius: 90px;
+    }  
+    .arrow-right {
+        position: absolute;
+        top: 100%;
+        transform: translateY(-70px);
+        right: calc(50% - 70px);
+        cursor: pointer;
+        width: 56px;
+        height: 56px;
+        background: #fff;
+        border: 2px solid #C7CDD9;
+        border-radius: 90px;
+    }
+
+
+
+
+
+}

@@ -46,16 +46,38 @@ $(() => {
 
 
 	const mySwiper = new Swiper('.staff .swiper-container', {
-		loop: true,
-		// autoHeight: true,
+		loop: false,
 		slidesPerView: 4,
 		slidesPerColumn: 2,
 		slidesPerColumnFill: 'row',
-		spaceBetween: 30,	   
+		spaceBetween: 30,	
+		
+		breakpoints: {
+			0: {
+			  slidesPerView: 1,
+			  slidesPerColumn: 1,
+			  spaceBetween: 0
+			},
+			479: {
+			  slidesPerView: 2,
+			  slidesPerColumn: 2,
+			  spaceBetween: 25
+			},
+			767: {
+				slidesPerView: 3,
+				slidesPerColumn: 2,
+				spaceBetween: 25
+			},
+			1023: {
+			  slidesPerView: 4,
+			  slidesPerColumn: 2,
+			  spaceBetween: 25
+			}
+		  },
    
 		navigation: {
-		  nextEl: '.swiper-button-next',
-		  prevEl: '.swiper-button-prev',
+		  nextEl: '.arrow-left',
+		  prevEl: '.arrow-right',
 		},
 	   
 	  });
