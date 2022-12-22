@@ -853,6 +853,87 @@ footer .cont {
 
 
 
+/* contacts */
+.contacts {
+    height: 614px;
+    
+}
+.contacts .cont {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.contacts_info {
+    width: 585px;
+    flex-shrink: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contacts_title {
+    text-align: start;
+    margin-bottom: 13px;
+}
+.title {
+}
+.contacts_phone {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 177.02%;
+    color: #212121;
+    text-decoration: none;
+    display: block;
+}
+.contacts_mail {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 177.02%;
+    color: #212121;
+    display: block;
+    margin-bottom: 25px;
+}
+.contacts_adress {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 177.02%;
+    color: #212121;
+    margin-bottom: 25px;
+}
+.about_item-link {
+}
+.contacts_soc {
+    margin-top: 45px;
+    display: flex;
+}
+.contacts_soc a {
+    text-decoration: none;
+    display: block;
+    margin-right: 10px;
+}
+.contacts_soc a img {
+    display: block;
+}
+.contacts .map_wrap {
+    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
+    width: calc(100% + 130px);
+    height: 614px;
+    transform: translateZ(0);
+    margin-left: 585px;
+    top: 0;
+    left: 0;
+}
+#map {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 
 
 

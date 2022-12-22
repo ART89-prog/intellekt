@@ -1,21 +1,22 @@
 .swiper-button-next,
 .swiper-button-prev
 {
-    color: #de041d;
-
     top: auto;
     bottom: 0;
 
     display: block;
 
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
     margin: 0;
 
     transition: .2s linear;
     transform: none;
 
     background: #fff;
+
+    border: 2px solid #C7CDD9;
+    border-radius: 90px;
 }
 
 .swiper-button-prev
@@ -36,26 +37,25 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 7px;
+    left: 0px;
 
     display: block;
 
-    width: 14px;
-    height: 14px;
+    width: 22px;
+    height: 16px;
     margin: auto;
 
     content: '';
-    transform: rotate(-45deg);
-
-    border-top: 2px solid;
-    border-left: 2px solid;
+    
 }
 
 .swiper-button-next:after
 {
-    left: -7px;
-
-    transform: rotate(-225deg);
+    background: url(../images/arrow_right.svg);
+}
+.swiper-button-prev:after
+{
+    background: url(../images/arrow_left.svg);
 }
 
 
