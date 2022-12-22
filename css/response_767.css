@@ -1,181 +1,162 @@
 @media print, (max-width: 767px) {
 
     :root {
-        --font_size: 16px;
-        --font_size_title: 20px;
+        --font_size_title: 32px;
     }
-    .first-section {
-        margin-top: 70px;
+   
+    header .mob_menu_btn {
+        display: flex;
+        order: 1;
     }
-    .first-section_title {
-        font-size: 23px;
-        line-height: 1.8;
-        margin-bottom: 15px;
-    }
-    .first-section_img {
-        width: 430px;
-        height: 432px;
-    }
-    .title {
-        line-height: 1.8;
-    }
-    .description_title, 
-    .realizationn_title, 
-    .components_title {
-        margin-bottom: 15px;
-    }
-    .description ul li,
-    .components ul li {
-        padding-left: 45px;
-    }
-    .realization_img {
-        width: 430px;
-        height: 432px;
-    }
-    .realization {
-        margin-bottom: 20px;
-    }
-    .title2 {
-        font-size: 19px;
-        line-height: 26px;
-        margin-bottom: 17px;
-    }
-    .components_item-text, 
-    .installation_item-text {
-        font-size: 17px;
-        line-height: 25px;
-        margin-bottom: 15px;
-    }
-    .components_item-img {
-        width: 433px;
-        height: 437px;
-    }
-    .callback_left-title {
-        font-size: 20px;
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-    .callback_phone img, 
-    .callback_email img {
-        margin-right: 12px;
-        width: 37px;
-        height: 37px;
-    }
-    .callback_phone, 
-    .callback_email {
-        font-size: 18px;
-        line-height: 25px;
-        margin-bottom: 10px;
-    }
-    .callback_email b {
-        font-size: 18px;
-        line-height: 29px;
-        margin-right: 5px;
-    }
-    .callback_right-title {
-        font-size: 20px;
-        line-height: 1.8;
-        margin-bottom: 5px;
-    }
-    .callback_right {
-        margin-top: 10px;
-    }
-    .callback_right-text {
-        font-size: 17px;
-        line-height: 23px;
-        margin-bottom: 13px;
-    }
-    .callback form label {
-        font-size: 15px;
-        margin-bottom: 3px;
-    }
-    .callback form button {
-        margin-top: 24px;
-    }
-    .callback_price {
-        font-size: 16px;
-    }
-    .requirements_item-title {
-        margin-bottom: 10px;
-        line-height: 1.5;
-    }
-    .requirements ul {
-        padding: 14px;
-    }
-    .requirements ul li {
-        margin-bottom: 15px;
-        line-height: 1.5;
-    }
-    .documents_items > * {
-        width: calc(100%/2 - 20px);
-    }
-    .footer_top {
-        margin-bottom: 20px;
-    }
-    .footer_bottom-link {
-        margin-bottom: 15px;
-    }
-    footer {
-        margin-bottom: 25px;
-    }
-    .requisites ul {
-        margin-left: 0;
-    }
-    .requisites {
-        margin-bottom: 30px;
-    }
-    .footer_logo {
-        margin-left: auto;
-        margin-right: auto;
-        order: -1;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .footer_top {
+    header .menu {
+        position: fixed;
+        z-index: 107;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        overflow: auto;
+
+        width: 295px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 30px 20px;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #fff;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
         flex-wrap: wrap;
     }
-    .footer_top ul:last-child {
-        align-items: flex-start;
+    header .menu.show {
+        transform: translateX(0);
     }
-    .requisites ul li {
-        padding-left: 45px;
-        margin-bottom: 15px;
+    header .close_btn {
+        display: flex;
     }
-    .clients {
-        margin-bottom: 40px;
+    .menu_open header .mob_menu_btn {
+        display: none;
     }
-    .text_block-wrap {
-        padding-top: 30px;
+    header .menu .item {
+        width: 100%;
     }
-    .tabs {
-        margin-bottom: 20px;
+    header .menu .item + .item {
+        margin-left: 0;
+    }
+    header .menu .item > a {
+        display: block;
+        height: auto;
+        padding: 17px 0;
+        text-align: left;
+        color: #000;
+    }  
+    .mob_menu_btn span {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 2px;
+        transition: background .2s linear;
+        background: #000; 
+    }
+    .mob_menu_btn span:before, 
+    .mob_menu_btn span:after {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: '';
+        transition: .2s linear;
+        background: #000;
+    }
+    .mob_menu_btn span:after {
+        top: 8px;
+    }
+    .mob_menu_btn.active span {
+        background: transparent;
+    }
+    .mob_menu_btn.active span:before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .mob_menu_btn.active span:after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    .menu_open header {
+        background: #595959;
     }
 
-    .requirements-po .tabs > * {
-        width: 200px;
-    }
-    .requirements-po .tabs {
-        margin-bottom: 20px;
-    }
-    .clients_item:nth-child(1) img {
-        width: 215px;
-        height: 72px;
-    }
 
-    .modal .callback_right-title {
-        font-size: 25px;
-        line-height: 28px;
-        margin-bottom: 7px;
+    .first_section .title {
+        padding: 45px 0 70px;
     }
-    .modal .callback_right-text {
+    .swiper-container-horizontal > .swiper-pagination-bullets, 
+    .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 20px;
+    }
+    .first_section {
+        margin-bottom: 35px;
+    }
+    .quote_text {
+        font-size: 17px;
+        padding: 20px 0 20px;
+    }
+    .quote, 
+    .about {
+        margin-bottom: 30px;
+    }
+    .about_desc {
         font-size: 16px;
-        line-height: 18px;
-        margin-bottom: 16px;
+        margin-bottom: 25px;
     }
-    .modal.callback form .line {
-        margin-bottom: 13px;
+    .about_items {
+        flex-wrap: wrap;
+        margin-left: 0px;
     }
-    
+    .about_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .about_item-title {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .news_item-title {
+        font-size: 17px;
+        margin-bottom: 8px;
+        margin-top: 5px;
+    }
+    footer .cont {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer_copyright {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    footer {
+        padding: 30px 0 30px;
+    }
+    .footer_politic {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .buttonUp button {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+    }
+
 
 
 

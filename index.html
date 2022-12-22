@@ -16,7 +16,7 @@
 		<!-- Подключение шрифтов -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 
 		<!-- Данное значение часто используют(использовали) поисковые системы -->
 		<meta name="description" content="">
@@ -29,9 +29,10 @@
 		
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
 		<link rel="stylesheet" href="css/styles.css">
 
-		<link rel="stylesheet" href="css/response_1300.css" media="print, (max-width: 1300px)">
 		<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
 		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
@@ -42,7 +43,7 @@
 		<div class="wrap">
 			<div class="main">
 				<header>									
-					<div class="cont">																
+					<div class="cont">															
 					
 						<button class="mob_menu_btn">
 							<img src="images/ic_mob_menu.svg" alt="">
@@ -52,546 +53,203 @@
 						</button>
 
 						<a href="#" class="logo">
-							<img src="images/logo.svg" alt="">
+							<img src="images/logo.png" alt="">
+							<img src="images/logo2.png" alt="">
 						</a>
 
-						<nav class="menu row">
-							<a href="#" class="logo logo-mob">
-								<img src="images/logo.svg" alt="">
-							</a>
-							
+						<nav class="menu row">												
 							<div class="item">
-								<a href="#description" class="scroll">Описание</a>
+								<a href="index.html">Главная</a>
 							</div>
 							<div class="item">
-								<a href="#realization" class="scroll">Реализация</a>
+								<a href="#about" class="scroll">Лаборатории</a>
 							</div>
 							<div class="item">
-								<a href="#components" class="scroll">Компоненты</a>
+								<a href="#news" class="scroll">Новости</a>
 							</div>
 							<div class="item">
-								<a href="#installation" class="scroll">Установка и внедрение</a>
+								<a href="#contacts" class="scroll">Контакты</a>
 							</div>
-							<div class="item">
-								<a href="#documents" class="scroll">Документы</a>
-							</div>
-							<div class="item">
-								<a href="#clients" class="scroll">Клиенты</a>
-							</div>
-							<div class="item">
-								<a href="#requisites" class="scroll">Контакты</a>
-							</div>	
-							<a href="#" class="contact_callback contact_callback-mob modal_link" data-content="#callback_modal">
-								<span>Заявка</span>
-							</a>
-														
 						</nav>
-
-						<a href="#" class="contact_callback modal_link" data-content="#callback_modal">
-							<span>Заявка</span>
-						</a>
-						
-					</div>	
-									
+					</div>										
 				</header>
 
 
-				<section class="first-section">
-					<div class="cont">
-						<div class="first-section_wrap">
-							<div class="first-section_info">
-								<div class="first-section_title">ПРОГРАММА ДЛЯ ЭВМ<br> “ОРУЖЕЙНЫЙ КЛАСТЕР”</div>
-								<div class="first-section_text">ПЭВМ ОРУЖЕЙНЫЙ КЛАСТЕР является CRM/ERP системой и предназначена для автоматизации процессов управления и документооборота предприятий в сферах оружейной индустрии, стрелкового спорта и оборота гражданского оружия.</div>
+				<section class="first_section">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="title">Опорные лаборатории<br> по перспективным направлениям<br> развития ИИ</div>
+								</div>
+								<div class="bg lozad" data-background-image="images/slide1.jpg"></div>
 							</div>
-							<div class="first-section_img">
-								<img src="images/first-section_img.svg" alt="">
-							</div>	
-						</div>						
-					</div>
-				</section>
-
-
-				<section class="description" id="description">
-					<div class="cont">
-						<div class="description_title title">КРАТКОЕ ОПИСАНИЕ ВОЗМОЖНОСТЕЙ</div>
-						<ul>
-							<li>Ведение и быстрый доступ к актуальной информации о клиентах, контрагентах, сделках, состоянии складов и материальной базы;</li>
-							<li>Оперативность обслуживания клиентов и проведения сделок;</li>
-							<li>Автоматизация и контроль работы персонала, согласованное взаимодействие между сотрудниками и подразделениями;</li>
-							<li>Формализация схем взаимодействия с клиентами и контрагентами, автоматизация документооборота;</li>
-							<li>Быстрое получение всех необходимых отчетных данных и аналитической информации;</li>
-							<li>API для интеграции с внешними информационными системами.</li>
-						</ul>				
-					</div>
-				</section>
-
-
-				<section class="realization" id="realization">
-					<div class="cont">
-						<div class="realization_wrap">
-							<div class="realization_info">
-								<div class="realizationn_title title">РЕАЛИЗАЦИЯ ПЭВМ “ОРУЖЕЙНЫЙ КЛАСТЕР”</div>
-								<div class="realization_text">ПЭВМ ОРУЖЕЙНЫЙ КЛАСТЕР реализована отдельным интернет приложением с пользовательским Web-порталом и хранением данных в SQL СУБД. ПО разделено на ряд модулей по реализуемому функционалу. В ПО реализован механизм авторизации с разграничением прав доступа по ролям. </div>
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="title">Опорные лаборатории<br> по перспективным направлениям<br> развития ИИ</div>
+								</div>
+								<div class="bg lozad" data-background-image="images/slide1.jpg"></div>
 							</div>
-							<div class="realization_img">
-								<img src="images/realization_img.svg" alt="">
-							</div>	
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="title">Опорные лаборатории<br> по перспективным направлениям<br> развития ИИ</div>
+								</div>
+								<div class="bg lozad" data-background-image="images/slide1.jpg"></div>
+							</div>
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="title">Опорные лаборатории<br> по перспективным направлениям<br> развития ИИ</div>
+								</div>
+								<div class="bg lozad" data-background-image="images/slide1.jpg"></div>
+							</div>
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="title">Опорные лаборатории<br> по перспективным направлениям<br> развития ИИ</div>
+								</div>
+								<div class="bg lozad" data-background-image="images/slide1.jpg"></div>
+							</div>
 						</div>	
+
+						<div class="swiper-pagination"></div>
 					</div>
 				</section>
 
 
-				<section class="components" id="components">
+				<div class="quote">
 					<div class="cont">
-						<div class="components_title title">Перечень и функционал компонентов ПО</div>
-						<div class="components_items">
-							<div class="components_item">
-								<div class="components_item-title title2">Модуль Стрелковый тир</div>
-								<div class="components_item-text">Обеспечивает функционал и процессы управления стрелковыми объектами:</div>
-								<ul>
-									<li>Бронирование стрелковых галерей;</li>
-									<li>Добавление клиентов в бронирование;</li>
-									<li>Назначение оружия и патронов;</li>
-									<li>Назначение услуг по инструкторскому сопровождению;</li>
-									<li>Назначение дополнительных услуг;</li>
-									<li>Назначение скидок;</li>
-									<li>Управление оплатой;</li>
-									<li>Управление базой подарочных сертификатов;</li>
-									<li>Финансовые отчеты с применением фильтров – детальный отчет, сводный отчет, отчет по депозитам;</li>
-									<li>Формирование отчетов закрытия смены.</li>
-								</ul>
-							</div>
-							<div class="components_item">
-								<div class="components_item-title title2">Модуль Клиенты</div>
-								<div class="components_item-text">Обеспечивает функционал и процессы управления профилями клиентов:</div>
-								<ul>
-									<li>Управление профилем клиента – создание, редактирование, удаление;</li>
-									<li>Автоматическая генерация договоров;</li>
-									<li>Сканирование и распознавание документов клиента;</li>
-									<li>Назначение постоянной скидки в профиле клиента;</li>
-									<li>Управление депозитом в профиле клиента;</li>
-									<li>Просмотр истории потребления услуг;</li>
-									<li>Назначение услуг из профиля клиента;</li>
-									<li>Верификация данных клиента – автоматическая проверка контрольных дат действия договоров и документов клиента;</li>
-									<li>Назначение служебных отметок и комментариев;</li>
-									<li>Управление статусом клиента;</li>
-									<li>Назначение типа клиента – частное лицо, организация.</li>
-								</ul>
-							</div>
-							<div class="components_item">
-								<div class="components_item-title title2">Модуль КХО</div>
-								<div class="components_item-text">Обеспечивает функционал и процессы управления складами и КХО:</div>
-								<ul>
-									<li>Учет оружия;</li>
-									<li>Учет патронов;</li>
-									<li>Учет ЗИП;</li>
-									<li>История амортизации оружия.</li>
-								</ul>
-							</div>
-							<div class="components_item">
-								<div class="components_item-title title2">Модуль Гражданское оружие</div>
-								<div class="components_item-text">Обеспечивает функционал и процессы обучения и аттестации, с целью получения лицензии на владение гражданским оружием, продления действующих разрешений:</div>
-								<ul>
-									<li>Первичное получение лицензии;</li>
-									<li>Повторная аттестация;</li>
-									<li>Дополнительное обучение при повторной аттестации;</li>
-									<li>История попыток сдачи теоретической и практической части;</li>
-									<li>Финансовые отчеты с применением фильтров – детальный отчет, сводный отчет, отчет по попыткам сдачи экзаменов.</li>
-								</ul>
-							</div>
-							<div class="components_item">
-								<div class="components_item-title title2">Модуль Документы</div>
-								<div class="components_item-text">Обеспечивает функционал и процессы управления базой документов:</div>
-								<ul>
-									<li>Загрузка, просмотр и удаление документов компании;</li>
-									<li>Распределение документов компании по разделам;</li>
-									<li>Поиск документов.</li>
-								</ul>
-							</div>
-							<div class="components_item">
-								<div class="components_item-title title2">Модуль Администрирование</div>
-								<div class="components_item-text">Обеспечивает функционал и процессы настройки общедоступных модулей ПО:</div>
-								<ul>
-									<li>Управление профилями сотрудников компании, распределение ролей и уровней доступа;</li>
-									<li>Управление справочниками – оружие, калибры, услуги, инфраструктура, тарифы;</li>
-									<li>Настройка параметров модулей общедоступной части.</li>
-								</ul>
-							</div>
-							<div class="components_item">
-								<div class="components_item-wrap">
-									<div class="components_item-img">
-										<img src="images/components_img.svg" alt="">
+						<div class="quote_text">Лаборатории созданы в рамках Инициативы Ректора МГУ В. А. Садовничего «Рубежи искусственного интеллекта» при поддержке некоммерческого Фонда развития науки и образования «Интеллект»</div>
+					</div>
+				</div>
+
+
+				<section class="about" id="about">
+					<div class="cont">
+						<div class="about_title title">О лабораториях</div>
+						<div class="about_desc">Задачей лабораторий является активизация исследований на переднем рубеже поиска	принципиально новых подходов к технологиям искусственного интеллекта. Работа лабораторий направлена на исследования нейроморфных подходов и использование новых физических принципов для реализации искусственного интеллекта.</div>
+						<div class="about_items">
+							<div class="about_item">
+								<div class="about_item-info">							
+									<div class="about_item-title">Нейронный ИИ</div>
+									<div class="about_item-subtitle">Лаборатория нейроинтеллекта (К.В.Анохин)</div>
+									<div class="about_item-img">
+										<img src="images/about1.jpg" alt="">
 									</div>
-									<div class="components_item-info">
-										<div class="components_item-title title2">Закрытая часть модулей и компонентов ПО </div>
-										<div class="components_item-text">Предназначена для служебного использования и обслуживается специалистами ООО ЕАИС «Оружейный кластер»:</div>	
-									</div>		
-								</div>															
-								<ul>
-									<li>Интеграционная шина – компонент, обеспечивающий централизованный и унифицированный событийно-ориентированный обмен сообщениями между модулями ПО на принципах сервис-ориентированной архитектуры (на схеме представлен в виде связей между компонентами);</li>
-									<li>Модуль Платежи и финансовый контроль – обеспечивает функционал и процессы проверки корректности проведения платежей и операций;</li>
-									<li>Модуль Отчеты и аналитика – обеспечивает функционал и процессы формирования финансовых и аналитических отчетов, отчетов о использовании расходных материалов, амортизации оборудования и инфраструктуры;</li>
-									<li>Модуль Интеграция с внешними системами – обеспечивает функционал и процессы информационного обмена с различными внешними системами и сторонним прикладным ПО через API, на основе JSON и XML.</li>
-									<li>Операционная система и компоненты системного ПО;</li>
-									<li>WEB-портал – графический интерфейс ПО, обеспечивает доступ пользователей и администраторов;</li>
-									<li>SQL СУБД – система управления базами данных, обеспечивает хранение всех данных ПО.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-				<section class="installation" id="installation">
-					<div class="cont">
-						<div class="installation_title title">установка, внедрение и техническая поддержка</div>
-						<div class="installation_text">ПЭВМ ОРУЖЕЙНЫЙ КЛАСТЕР не предусматривает передачу ПО, документации по установке ПО и самостоятельную установку ПО Заказчиком. Установка каждой копии ПО выполняется специалистами ООО ЕАИС «Оружейный кластер» в рамках внедрения под конкретного Заказчика. </div>
-						<div class="installation_items">
-							<div class="installation_item">
-								<div class="installation_item-title title2">Установка</div>
-								<div class="installation_item-text">Установка ПО выполняется в рамках модели предоставления услуг SaaS:</div>
-								<ul>
-									<li>С размещением на серверном оборудовании ООО ЕАИС «Оружейный кластер», с размещением в центре обработки данных ООО ЕАИС «Оружейный кластер» и обеспечением постоянного удаленного доступа для персонала Заказчика;</li>
-									<li>С размещением на оборудовании Заказчика, с размещением на площадке Заказчика и обеспечения постоянного удаленного доступа для специалистов ООО ЕАИС «Оружейный кластер».</li>
-								</ul>
-							</div>
-							<div class="installation_item">
-								<div class="installation_item-title title2">Внедрение</div>
-								<div class="installation_item-text">Затраты на внедрение ПО в рамках конкретного предприятия определяются на этапе обследования объекта, поскольку зависят от ряда индивидуальных факторов:</div>
-								<ul>
-									<li>Набор внедряемых модулей;</li>
-									<li>Количество и сложность интеграций;</li>
-									<li>Деятельность предприятия в рамках индустрии;</li>
-									<li>Бизнес-процессов предприятия;</li>
-									<li>Инфраструктуры предприятия.</li>
-								</ul>
-							</div>	
-							<div class="installation_item">
-								<div class="installation_item-title title2">Техническая поддержка ПО</div>
-								<div class="installation_item-text">Техническая поддержка осуществляется в формате консультирования пользователей и администраторов ПО, и дистанционного подключения специалистов ООО ЕАИС «Оружейный кластер» для обслуживания ПО, в режиме 24/7.</div>
-							</div>	
-						</div>						
-					</div>
-				</section>
-
-
-				<section class="callback" id="callback">
-					<div class="cont">
-						<div class="callback_wrap">
-							<div class="callback_left">
-								<div class="callback_left-title">По вопросам приобретения и эксплуатации</div>
-								<a href="tel:74954774391" class="callback_phone">
-									<img src="images/phone.svg" alt="">
-									<span>+7 (495) 477 43 91</span>
-								</a>
-								<a href="mailto:sales@eais-ok.ru" class="callback_email">
-									<img src="images/email.svg" alt="">
-									<span><b>Вопросы приобретения:</b> sales@eais&nbsp;-&nbsp;ok.ru</span>
-								</a>
-								<a href="mailto:servicedesk@eais-ok.ru" class="callback_email">
-									<img src="images/email.svg" alt="">
-									<span><b>Вопросы эксплуатации:</b> servicedesk@eais-ok.ru </span>
+									<div class="about_item-text">Исследования и моделирование общих принципов интеллекта в естественных и искусственных нейронных системах</div>
+									<div class="about_item-institute">Институт перспективных исследований мозга</div>
+								</div>
+								<a href="#" class="about_item-link">
+									<span>Подробнее</span>
 								</a>
 							</div>
-							<div class="callback_right">
-								<div class="callback_right-title">Обратный звонок</div>
-								<div class="callback_right-text">Отправьте запрос на консультации по ПО</div>
-								<form>
-									<div class="line">
-										<div class="field">
-											<label for="name">Как вас зовут?</label>
-											<input id="name" type="text" placeholder="Ваше имя">
-										</div>
+							<div class="about_item">
+								<div class="about_item-info">
+									<div class="about_item-title">Фотонный ИИ</div>
+									<div class="about_item-subtitle">Лаборатория нейроморфной фотоники (А.А.Федянин)</div>
+									<div class="about_item-img">
+										<img src="images/about2.jpg" alt="">
 									</div>
-									<div class="line">
-										<div class="field">
-											<label for="name">Номер телефона</label>
-											<input id="name" type="tel" placeholder="+7 (___) ___-__-__">
-										</div>
-									</div>
-									<button type="submit">
-										<span>Отправить запрос</span>
-									</button>
-									<div class="form-politic">Я подтверждаю согласие на обработку моих персональных данных (закон №152-ФЗ «О персональных данных») и соглашаюсь с политикой конфиденциальности</div>
-								</form>
-							</div>
-						</div>
-						<div class="callback_price">*Стоимость внедрения и оказания услуг технической поддержки определяется по результатам обследования объекта и внедрения <a href="#">системы</a>.</div>
-					</div>
-				</section>
-
-
-				<section class="requirements requirements-po">
-					<div class="cont">
-						<div class="requirements_title title2">Требования к аппаратному обеспечению</div>
-
-						<div class="tabs_container">
-							<div class="tabs">
-								<button data-content="#tab6" data-level="level1" class="active">
-									<div class="requirements_item">
-										<div class="requirements_item-title">Процессор</div>
-										<div class="requirements_item-img">
-											<img src="images/tr1.svg" alt="">
-										</div>
-										<div class="requirements_item-img-hov">
-											<img src="images/tr1-1.svg" alt="" >
-										</div>
-									</div>
-								</button>
-								<button data-content="#tab7" data-level="level1">
-									<div class="requirements_item">
-										<div class="requirements_item-title">ОЗУ</div>
-										<div class="requirements_item-img">
-											<img src="images/tr2.svg" alt="">
-										</div>
-										<div class="requirements_item-img-hov">
-											<img src="images/tr2-1.svg" alt="" >
-										</div>
-									</div>									
-								</button>
-								<button data-content="#tab8" data-level="level1">
-									<div class="requirements_item">
-										<div class="requirements_item-title">Жесткий диск</div>
-										<div class="requirements_item-img">
-											<img src="images/tr3.svg" alt="">
-										</div>
-										<div class="requirements_item-img-hov">
-											<img src="images/tr3-1.svg" alt="" >
-										</div>
-									</div>
-								</button>
-							</div>
-
-							<div class="tab_content level1 active" id="tab6">
-								<ul>
-									<li>Двухпроцессорный, не менее четырех ядер каждый.</li>
-									<li>Частота – не ниже 4 ГГц. Поддерживает работу с 64-х разрядными приложениями на аппаратном уровне.</li>
-									<li>Поддерживается облачное развертывания с применением технологий виртуализации.</li>
-								</ul>
-							</div>
-
-							<div class="tab_content level1" id="tab7">
-								<ul>
-									<li>Двухпроцессорный, не менее четырех ядер каждый.</li>
-									<li>Частота – не ниже 4 ГГц. Поддерживает работу с 64-х разрядными приложениями на аппаратном уровне.</li>
-									<li>Поддерживается облачное развертывания с применением технологий виртуализации.</li>
-								</ul>
-							</div>
-
-							<div class="tab_content level1" id="tab8">
-								<ul>
-									<li>Двухпроцессорный, не менее четырех ядер каждый.</li>
-									<li>Частота – не ниже 4 ГГц. Поддерживает работу с 64-х разрядными приложениями на аппаратном уровне.</li>
-									<li>Поддерживается облачное развертывания с применением технологий виртуализации.</li>
-								</ul>
-							</div>
-
-						</div>
-
-
-					</div>
-				</section>
-
-				<section class="requirements">
-					<div class="cont">
-						<div class="requirements_title title2">Требование к системному ПО сервера</div>
-						
-						<div class="tabs_container">
-							<div class="tabs">
-								<button data-content="#tab1" data-level="level1" class="active">
-									<div class="requirements_item">
-										<div class="requirements_item-title">Операционная<br> система</div>
-										<div class="requirements_item-img">
-											<img src="images/tr4.svg" alt="" >
-										</div>
-										<div class="requirements_item-img-hov">
-											<img src="images/tr4-1.svg" alt="" >
-										</div>
-									</div>
-								</button>
-								<button data-content="#tab2" data-level="level1">
-									<div class="requirements_item">
-										<div class="requirements_item-title">Система<br> управления<br> базами данных</div>
-										<div class="requirements_item-img">
-											<img src="images/tr5.svg" alt="">
-										</div>
-										<div class="requirements_item-img-hov">
-											<img src="images/tr5-1.svg" alt="" >
-										</div>
-									</div>
-								</button>
-								<button data-content="#tab3" data-level="level1">
-									<div class="requirements_item">
-										<div class="requirements_item-title">Виртуальная машина<br> Java</div>
-										<div class="requirements_item-img">
-											<img src="images/tr6.svg" alt="">
-										</div>
-										<div class="requirements_item-img-hov">
-											<img src="images/tr6-1.svg" alt="" >
-										</div>
-									</div>
-								</button>
-								<button data-content="#tab4" data-level="level1">
-									<div class="requirements_item">
-										<div class="requirements_item-title">Web-сервер</div>
-										<div class="requirements_item-img">
-											<img src="images/tr7.svg" alt="">
-										</div>
-										<div class="requirements_item-img-hov">
-											<img src="images/tr7-1.svg" alt="" >
-										</div>
-									</div>
-								</button>
-								<button data-content="#tab4" data-level="level1">
-									<div class="requirements_item">
-										<div class="requirements_item-title">Программно-аппаратный<br> комплекс распознавания<br> документов</div>
-										<div class="requirements_item-img">
-											<img src="images/tr8.svg" alt="">
-										</div>
-										<div class="requirements_item-img-hov">
-											<img src="images/tr8-1.svg" alt="" >
-										</div>
-									</div>
-								</button>
-							</div>
-
-							<div class="tab_content level1 active" id="tab1">
-								<ul>
-									<li>Наименование ПО и версия: Ubuntu 20.04</li>
-									<li>Правообладатель: Canonical</li>
-									<li>Лицензия: Free software + some proprietary device drivers</li>
-									<li>Количество: 1</li>
-								</ul>
-							</div>
-
-							<div class="tab_content level1" id="tab2">
-								<ul>
-									<li>Наименование ПО и версия: Ubuntu 20.04</li>
-									<li>Правообладатель: Canonical</li>
-									<li>Лицензия: Free software + some proprietary device drivers</li>
-									<li>Количество: 1</li>
-								</ul>
-							</div>
-
-							<div class="tab_content level1" id="tab3">
-								<ul>
-									<li>Наименование ПО и версия: Ubuntu 20.04</li>
-									<li>Правообладатель: Canonical</li>
-									<li>Лицензия: Free software + some proprietary device drivers</li>
-									<li>Количество: 1</li>
-								</ul>
-							</div>
-
-							<div class="tab_content level1" id="tab4">
-								<ul>
-									<li>Наименование ПО и версия: Ubuntu 20.04</li>
-									<li>Правообладатель: Canonical</li>
-									<li>Лицензия: Free software + some proprietary device drivers</li>
-									<li>Количество: 1</li>
-								</ul>
-							</div>
-
-							<div class="tab_content level1" id="tab5">
-								<ul>
-									<li>Наименование ПО и версия: Ubuntu 20.04</li>
-									<li>Правообладатель: Canonical</li>
-									<li>Лицензия: Free software + some proprietary device drivers</li>
-									<li>Количество: 1</li>
-								</ul>
-							</div>
-						</div>
-					</div>	
-					
-				</section>
-
-
-				<section class="documents" id="documents">
-					<div class="cont">
-						<div class="documents_title title2">Документы</div>
-						<div class="documents_items">
-							<a href="#" class="documents_item" download>
-								<div class="documents_item-img">
-									<img src="images/document.svg" alt="">
+									<div class="about_item-text">Исследования возможности использования принципов и подходов фотоники для создания элементной базы и вычислительных систем, реализующих алгоритмы искусственного интеллекта</div>
+									<div class="about_item-institute">Физический факультет</div>
 								</div>
-								<div class="documents_item-title">Руководство администратора</div>
-							</a>
-							<a href="#" class="documents_item" download>
-								<div class="documents_item-img">
-									<img src="images/document.svg" alt="">
-								</div>
-								<div class="documents_item-title">Описание системы</div>
-							</a>
-							<a href="#" class="documents_item" download>
-								<div class="documents_item-img">
-									<img src="images/document.svg" alt="">
-								</div>
-								<div class="documents_item-title">Свидетельство о регистрации</div>
-							</a>
-							<a href="#" class="documents_item" download>
-								<div class="documents_item-img">
-									<img src="images/document.svg" alt="">
-								</div>
-								<div class="documents_item-title">Сертификат на домен</div>
-							</a>
-							<a href="#" class="documents_item" download>
-								<div class="documents_item-img">
-									<img src="images/document.svg" alt="">
-								</div>
-								<div class="documents_item-title">Компоненты при разработке</div>
-							</a>
-							<a href="#" class="documents_item" download>
-								<div class="documents_item-img">
-									<img src="images/document.svg" alt="">
-								</div>
-								<div class="documents_item-title">Компоненты для установки</div>
-							</a>
+								<a href="#" class="about_item-link">
+									<span>Подробнее</span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</section>
 
 
-
-				<section class="clients" id="clients">
+				<section class="news bg2" id="news">
 					<div class="cont">
-						<div class="clients_title title2">Клиенты</div>
-						<div class="clients_items">
-							<a href="#" class="clients_item">
-								<img src="images/client1.png" alt="">
-							</a>
-							<a href="#" class="clients_item">
-								<img src="images/client2.png" alt="">
-							</a>
+						<div class="news_title title">Новости</div>
+						<div class="news_items">
+							<div class="news_item">
+								<div class="news_item-date">23.06.2022</div>
+								<a href="#" class="news_item-title">МГУ имени М.В. Ломоносова и фонд «Интеллект» проводят конкурс факультативов</a>
+								<div class="news_item-text">Исследования возможности использования принципов и подходов фотоники для создания элементной базы и вычислительных систем, реализующих алгоритмы искусственного интеллекта...</div>
+								<a href="#" class="news_item-link">
+									<span>Подробнее</span>
+								</a>
+							</div>
+							<div class="news_item active">
+								<div class="news_item-date">23.06.2022</div>
+								<a href="#" class="news_item-title">МГУ имени М.В. Ломоносова и фонд «Интеллект» проводят конкурс факультативов</a>
+								<div class="news_item-text">Исследования возможности использования принципов и подходов фотоники для создания элементной базы и вычислительных систем, реализующих алгоритмы искусственного интеллекта...</div>
+								<a href="#" class="news_item-link">
+									<span>Подробнее</span>
+								</a>
+							</div>
+							<div class="news_item">
+								<div class="news_item-date">23.06.2022</div>
+								<a href="#" class="news_item-title">МГУ имени М.В. Ломоносова и фонд «Интеллект» проводят конкурс факультативов</a>
+								<div class="news_item-text">Исследования возможности использования принципов и подходов фотоники для создания элементной базы и вычислительных систем, реализующих алгоритмы искусственного интеллекта...</div>
+								<a href="#" class="news_item-link">
+									<span>Подробнее</span>
+								</a>
+							</div>
+							<div class="news_item">
+								<div class="news_item-date">23.06.2022</div>
+								<a href="#" class="news_item-title">МГУ имени М.В. Ломоносова и фонд «Интеллект» проводят конкурс факультативов</a>
+								<div class="news_item-text">Исследования возможности использования принципов и подходов фотоники для создания элементной базы и вычислительных систем, реализующих алгоритмы искусственного интеллекта...</div>
+								<a href="#" class="news_item-link">
+									<span>Подробнее</span>
+								</a>
+							</div>
+							<div class="news_item">
+								<div class="news_item-date">23.06.2022</div>
+								<a href="#" class="news_item-title">МГУ имени М.В. Ломоносова и фонд «Интеллект» проводят конкурс факультативов</a>
+								<div class="news_item-text">Исследования возможности использования принципов и подходов фотоники для создания элементной базы и вычислительных систем, реализующих алгоритмы искусственного интеллекта...</div>
+								<a href="#" class="news_item-link">
+									<span>Подробнее</span>
+								</a>
+							</div>
 						</div>
-					</div>
-				</section>
-
-
-				<section class="requisites" id="requisites">
-					<div class="cont">
-						<div class="requisites_title title2">Реквизиты</div>
-						<ul>
-							<li>ООО ЕАИС «ОРУЖЕЙНЫЙ КЛАСТЕР»</li>
-							<li>ИНН 5029265898</li>
-							<li>р/с № 40702810901280001047</li>
-							<li>БИК 044525411</li>
-							<li>ФИЛИАЛ «ЦЕНТРАЛЬНЫЙ» БАНКА ВТБ (ПАО) Г.МОСКВА</li>
-							<li>к/с № 30101810145250000411</li>
-							<li>141009, Московская область, г.Мытищи, ул. Новослободская вл.1.,ст.1</li>
-						</ul>
-					</div>
-				</section>
-
-
-				<section class="text_block">
-					<div class="cont">
-						<div class="text_block-wrap">
-							<p>ПЭВМ ОРУЖЕЙНЫЙ КЛАСТЕР правомерно введена в гражданский оборот на территории Российской Федерации, экземпляры ПО либо права использования ПО, услуги по предоставлению доступа к ПО свободно реализуются на всей территории Российской Федерации, отсутствуют ограничения, установленные в том числе иностранными государствами и препятствующие распространению или иному использованию ПО для электронных вычислительных машин и базы данных на территории Российской Федерации или территориях отдельных субъектов Российской Федерации.</p>
-							<p>Сведения о ПО не составляют государственную тайну и ПО не содержит сведений, составляющих государственную тайну.</p>
-							<p>Исключительное право на ПО на территории всего мира и на весь срок действия исключительного права согласно свидетельству о государственной регистрации ПО № 2022616302 принадлежит Общество с ограниченной ответственностью ЕАИС «Оружейный кластер».</p>
-							<p>ПО не имеет принудительного обновления и управления из-за рубежа.</p>
-							<p>Гарантийное обслуживание, техническая поддержка и модернизация ПО осуществляются российской коммерческой или некоммерческой организацией без преобладающего иностранного участия либо гражданином Российской Федерации, а именно, собственными силами и средствами российской коммерческой организации Общество с ограниченной ответственностью ЕАИС «Оружейный кластер».</p>	
+						<a href="#" class="news_link">
+							<span>Загрузить еще</span>
+						</a>
+						<div class="news_items hide-content">
+							<div class="news_item">
+								<div class="news_item-date">23.06.2022</div>
+								<a href="#" class="news_item-title">МГУ имени М.В. Ломоносова и фонд «Интеллект» проводят конкурс факультативов</a>
+								<div class="news_item-text">Исследования возможности использования принципов и подходов фотоники для создания элементной базы и вычислительных систем, реализующих алгоритмы искусственного интеллекта...</div>
+								<a href="#" class="news_item-link">
+									<span>Подробнее</span>
+								</a>
+							</div>
+							<div class="news_item">
+								<div class="news_item-date">23.06.2022</div>
+								<a href="#" class="news_item-title">МГУ имени М.В. Ломоносова и фонд «Интеллект» проводят конкурс факультативов</a>
+								<div class="news_item-text">Исследования возможности использования принципов и подходов фотоники для создания элементной базы и вычислительных систем, реализующих алгоритмы искусственного интеллекта...</div>
+								<a href="#" class="news_item-link">
+									<span>Подробнее</span>
+								</a>
+							</div>
+							<div class="news_item">
+								<div class="news_item-date">23.06.2022</div>
+								<a href="#" class="news_item-title">МГУ имени М.В. Ломоносова и фонд «Интеллект» проводят конкурс факультативов</a>
+								<div class="news_item-text">Исследования возможности использования принципов и подходов фотоники для создания элементной базы и вычислительных систем, реализующих алгоритмы искусственного интеллекта...</div>
+								<a href="#" class="news_item-link">
+									<span>Подробнее</span>
+								</a>
+							</div>
+							<div class="news_item">
+								<div class="news_item-date">23.06.2022</div>
+								<a href="#" class="news_item-title">МГУ имени М.В. Ломоносова и фонд «Интеллект» проводят конкурс факультативов</a>
+								<div class="news_item-text">Исследования возможности использования принципов и подходов фотоники для создания элементной базы и вычислительных систем, реализующих алгоритмы искусственного интеллекта...</div>
+								<a href="#" class="news_item-link">
+									<span>Подробнее</span>
+								</a>
+							</div>
+							<div class="news_item">
+								<div class="news_item-date">23.06.2022</div>
+								<a href="#" class="news_item-title">МГУ имени М.В. Ломоносова и фонд «Интеллект» проводят конкурс факультативов</a>
+								<div class="news_item-text">Исследования возможности использования принципов и подходов фотоники для создания элементной базы и вычислительных систем, реализующих алгоритмы искусственного интеллекта...</div>
+								<a href="#" class="news_item-link">
+									<span>Подробнее</span>
+								</a>
+							</div>
 						</div>
-						
 					</div>
 				</section>
 
@@ -600,47 +258,8 @@
 
 			<footer>
 				<div class="cont">
-					<div class="footer_top">
-						<ul>
-							<li>
-								<a href="#description" class="scroll">Описание</a>
-							</li>
-							<li>
-								<a href="#realization" class="scroll">Реализация</a>
-							</li>
-							<li>
-								<a href="#components" class="scroll">Компоненты</a>
-							</li>
-						</ul>
-						<div class="footer_logo">
-							<img src="images/logo.svg" alt="">
-						</div>
-						<ul>
-							<li>
-								<a href="#installation" class="scroll">Установка и внедрение</a>
-							</li>
-							<li>
-								<a href="#documents" class="scroll">Документы</a>
-							</li>
-							<li>
-								<a href="#clients" class="scroll">Клиенты</a>
-							</li>
-							<li>
-								<a href="#requisites" class="scroll">Контакты</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer_bottom">
-						<div class="footer_bottom-link">
-							<a href="tel:74954774391">
-								<img src="images/phone.svg" alt="">
-							</a>
-							<a href="mailto:sales@eais-ok.ru ">
-								<img src="images/email.svg" alt="">
-							</a>	
-						</div>
-						<div class="footer_copy">© ЕАИС «Оружейный кластер»  2022 | Все права защищены</div>
-					</div>
+					<div class="footer_copyright">© 2022 Фонд «Интеллект»</div>
+					<a href="#" class="footer_politic">Политика по обработке и защите персональных данных</a>
 				</div>
 			</footer>
 
@@ -687,6 +306,7 @@
 
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/lozad.min.js"></script>
 		<script src="js/inputmask.min.js"></script>

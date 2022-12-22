@@ -23,6 +23,37 @@ $(() => {
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
 
 
+			// Основной слайдер на главной
+		if ($('.first_section .swiper-container').length) {
+		new Swiper('.first_section .swiper-container', {
+			loop: true,
+			speed: 750,
+			watchSlidesVisibility: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 0,
+			slidesPerView: 1,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		})
+	}
+
+
+	$(".hide-content").hide();
+	$(".news_link").click(function(e) {
+		e.preventDefault();
+		$(this).next(".hide-content").slideToggle();
+		$(".news_link").addClass("active");
+	});
+
 
 	// Скрол к пунктам меню
 	$(".scroll").on("click", function(e){
@@ -94,7 +125,7 @@ $(() => {
 		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
 	}
 
-	Fancybox
+	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.dragToClose = false
 	Fancybox.defaults.l10n = {
