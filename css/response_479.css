@@ -11,6 +11,17 @@
         padding-left: 10px;
     }
 
+    .trend_items {
+        flex-wrap: wrap;
+        margin-left: 0px;
+        margin-bottom: -25px;
+    }
+    .trend_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+
  
 
    

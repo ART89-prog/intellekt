@@ -1,6 +1,11 @@
 @media print, (max-width: 1187px) {
 
-
+    .text_block img {
+        width: 450px;
+        height: 283px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
 
 
 

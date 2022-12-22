@@ -47,9 +47,10 @@ $(() => {
 
 	const mySwiper = new Swiper('.staff .swiper-container', {
 		loop: true,
-		autoHeight: true,
+		// autoHeight: true,
 		slidesPerView: 4,
-		slidesPerColumn: 3,
+		slidesPerColumn: 2,
+		slidesPerColumnFill: 'row',
 		spaceBetween: 30,	   
    
 		navigation: {

@@ -1,7 +1,7 @@
 @media print, (max-width: 767px) {
 
     :root {
-        --font_size_title: 32px;
+        --font_size_title: 28px;
     }
    
     header .mob_menu_btn {
@@ -156,6 +156,66 @@
         height: 60px;
         background-size: cover;
     }
+
+
+    .text_block img {
+        width: 100%;
+        height: auto;
+    }
+    .text_block-title {
+        margin-bottom: 20px;
+    }
+    .title-line {
+        padding-bottom: 10px;
+    }
+    .trend_title {
+        margin-bottom: 20px;
+    }
+    .text_block {
+        margin-bottom: 25px;
+    }
+    .trend {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .contacts .map_wrap {
+        position: relative;
+        margin-left: 0;
+        height: 280px;
+    }
+    .contacts_info {
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    .contacts .cont {
+        flex-direction: column;
+    }
+    .contacts {
+        height: 100%;
+        padding-top: 25px;
+    }
+    .contacts_title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contacts_mail {
+        margin-bottom: 12px;
+    }
+    .about_item-link {
+        margin: auto;
+    }
+    .contacts_soc {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+    .text_block p {
+        margin-bottom: 10px;
+    }
+
+ 
 
 
 
