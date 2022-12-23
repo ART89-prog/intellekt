@@ -19,8 +19,7 @@ $(() => {
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
 
-	// Маска ввода
-	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
+
 
 
 			// Основной слайдер на главной
@@ -76,8 +75,8 @@ $(() => {
 		  },
    
 		navigation: {
-		  nextEl: '.arrow-left',
-		  prevEl: '.arrow-right',
+		  nextEl: '.arrow-right',
+		  prevEl: '.arrow-left',
 		},
 	   
 	  });
@@ -105,71 +104,6 @@ $(() => {
 	});
 
 
-	// Кнопка 'Вверх'
-	$('body').on('click', '.buttonUp button', function(e) {
-		e.preventDefault()
-
-		$('body, html').stop(false, false).animate({
-			scrollTop: 0
-		}, 1000)
-	})
-
-
-	$(window).scroll(function(){
-		// Кнопка 'Вверх'
-		if( $(window).scrollTop() > $(window).innerHeight() ) {
-			$('.buttonUp').fadeIn(300)
-		} else {
-			$('.buttonUp').fadeOut(200)
-		}
-	})
-
-
-
-	// Табы
-	var locationHash = window.location.hash
-
-	$('body').on('click', '.tabs button', function (e) {
-		e.preventDefault()
-
-		if (!$(this).hasClass('active')) {
-			const $parent = $(this).closest('.tabs_container'),
-				activeTab = $(this).data('content'),
-				$activeTabContent = $(activeTab),
-				level = $(this).data('level')
-
-			$parent.find('.tabs:first button').removeClass('active')
-			$parent.find('.tab_content.' + level).removeClass('active')
-
-			$(this).addClass('active')
-			$activeTabContent.addClass('active')
-		}
-	})
-
-	if (locationHash && $('.tabs_container').length) {
-		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
-			$activeTabContent = $(locationHash),
-			$parent = $activeTab.closest('.tabs_container'),
-			level = $activeTab.data('level')
-
-		$parent.find('.tabs:first button').removeClass('active')
-		$parent.find('.tab_content.' + level).removeClass('active')
-
-		$activeTab.addClass('active')
-		$activeTabContent.addClass('active')
-
-		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
-	}
-
-	// Fancybox
-	Fancybox.defaults.autoFocus = false
-	Fancybox.defaults.dragToClose = false
-	Fancybox.defaults.l10n = {
-		CLOSE: "Закрыть",
-		NEXT: "Следующий",
-		PREV: "Предыдущий",
-		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
-	}
 
 
 	// Моб. версия

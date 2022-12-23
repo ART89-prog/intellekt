@@ -151,13 +151,6 @@
         font-size: 14px;
     }
 
-    .buttonUp button {
-        width: 60px;
-        height: 60px;
-        background-size: cover;
-    }
-
-
     .text_block img {
         width: 100%;
         height: auto;
@@ -216,6 +209,15 @@
     }
     .staff_title {
         margin-bottom: 5px;
+    }
+    .staff {
+        padding-top: 30px;
+    }
+    .staff .swiper-container {
+        margin-top: 30px;
+    }
+    .news_item-link {
+        margin-left: auto;
     }
 
  

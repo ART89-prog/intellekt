@@ -283,9 +283,11 @@ header {
     padding-bottom: 15px;
     background: #fff;
     width: 100%;
-    /* height: 174px; */
     position: fixed;
     top: 0;
+    -webkit-box-shadow: 2px 15px 16px -5px rgba(34, 60, 80, 0.29);
+    -moz-box-shadow: 2px 15px 16px -5px rgba(34, 60, 80, 0.29);
+    box-shadow: 2px 15px 16px -5px rgba(34, 60, 80, 0.29);
 }
 header .cont {
     display: flex;
@@ -380,8 +382,8 @@ header .menu .item > a {
     flex-wrap: wrap;
 }
 header .menu .item:hover>a,
-header .menu .item.current-menu-item>a {
-    color: #000;
+header .menu .item.current-menu-item>a {   
+    color: #0249b3;  
 }
 header .logo-mob {
     display: none;
@@ -622,7 +624,7 @@ header .logo-mob {
     padding-bottom: 30px;
     padding-top: 22px;
 }
-.news_item.active .news_item-title {
+.news_item-title:hover {
     color: #4C89FF;
 }
 .news_item-date {
@@ -639,6 +641,7 @@ header .logo-mob {
     margin-bottom: 7px;
     text-decoration: none;
     display: block;
+    transition: all .4s;
 }
 .news_item-text {
     font-weight: 400;
@@ -714,24 +717,6 @@ footer .cont {
     text-decoration: none;
 }
 
-
-
-.buttonUp {
-    position: fixed;
-    z-index: 999;
-    right: 20px;
-    bottom: 20px;
-}
-.buttonUp button {
-    position: relative;
-    display: block;
-    width: 90px;
-    height: 90px;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background: url(../images/button_up.svg);
-}
 
 
 /* text_block */
@@ -838,6 +823,7 @@ footer .cont {
     line-height: 143.02%;
     text-align: center;
     color: var(--text_color);
+    margin-bottom: 10px;
 }
 .trend_item-text {
     font-weight: 400;
@@ -894,6 +880,10 @@ footer .cont {
     color: var(--text_color);
     text-decoration: none;
     display: block;
+    transition: all .4s;
+}
+.contacts_phone:hover {
+    color: #0249b3;
 }
 .contacts_mail {
     font-weight: 400;
@@ -902,6 +892,10 @@ footer .cont {
     color: var(--text_color);
     display: block;
     margin-bottom: 25px;
+    transition: all .4s;
+}
+.contacts_mail:hover {
+    color: #0249b3;
 }
 .contacts_adress {
     font-weight: 400;
@@ -997,7 +991,7 @@ footer .cont {
 .arrow-left {
     position: absolute;
     top: 50%;
-    transform: translateY(130px);
+    transform: translateY(50%);
     left: calc(50% - 645px);
     cursor: pointer;
     width: 56px;
@@ -1009,7 +1003,7 @@ footer .cont {
 .arrow-right {
     position: absolute;
     top: 50%;
-    transform: translateY(130px);
+    transform: translateY(50%);
     right: calc(50% - 645px);
     cursor: pointer;
     width: 56px;
